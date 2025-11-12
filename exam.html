@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài kiểm tra - Ôn thi đại học</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.jpg" alt="Logo" class="logo-img" />
+      <div class="logo">ÔN THI ĐẠI HỌC</div>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="subjects.html">Môn học</a>
+        <a href="exam.html">Bài kiểm tra</a>
+        <a href="results.html">Kết quả</a>
+      </nav>
+      <div class="actions">
+        <input type="text" placeholder="Tìm kiếm..." />
+        <button>Đăng nhập</button>
+      </div>
+    </header>
+
+    <section class="exam-page">
+      <h1>Bài kiểm tra toàn bộ môn Toán</h1>
+      <div class="exam-container">
+        <form id="exam-form">
+          <p>
+            <strong>Câu 1:</strong> Tính đạo hàm của hàm số f(x) = 3x² + 2x + 1
+          </p>
+          <label
+            ><input type="radio" name="q1" value="a" /> f'(x) = 6x + 1</label
+          >
+          <label
+            ><input type="radio" name="q1" value="b" /> f'(x) = 6x + 2</label
+          >
+          <label
+            ><input type="radio" name="q1" value="c" /> f'(x) = 3x + 2</label
+          ><br /><br />
+
+          <p><strong>Câu 2:</strong> Tính tích phân ∫(2x + 3)dx</p>
+          <label><input type="radio" name="q2" value="a" /> x² + 3x + C</label>
+          <label><input type="radio" name="q2" value="b" /> 2x² + 3x + C</label>
+          <label><input type="radio" name="q2" value="c" /> x² + 3 + C</label
+          ><br /><br />
+
+          <p>
+            <strong>Câu 3:</strong> Giới hạn lim(x→2) (x² - 4)/(x - 2) bằng bao
+            nhiêu?
+          </p>
+          <label><input type="radio" name="q3" value="a" /> 2</label>
+          <label><input type="radio" name="q3" value="b" /> 4</label>
+          <label><input type="radio" name="q3" value="c" /> 0</label
+          ><br /><br />
+
+          <button type="submit" class="submit-btn">Nộp bài</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Website Ôn Thi Đại Học | Email: onthidaihoc@gmail.com</p>
+    </footer>
+  </body>
+</html>

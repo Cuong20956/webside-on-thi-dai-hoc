@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ôn thi đại học</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.jpg" alt="Logo" class="logo-img" />
+      <div class="logo">ÔN THI ĐẠI HỌC</div>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="subjects.html">Môn học</a>
+        <a href="exam.html">Bài kiểm tra</a>
+        <a href="results.html">Kết quả</a>
+      </nav>
+       <div class="actions">
+        <input type="text" placeholder="Tìm kiếm..." />
+        <div class="auth-controls">
+      <!--    <a href="#" id="openSignup" class="signup-link">Chưa có tài khoản? Đăng ký</a>
+          <button id="openLogin" class="btn-login">Đăng nhập</button>
+          -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Modal Login/Signup -->
+    <div id="authModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <div class="auth-tabs">
+          <button id="tabLogin" class="active">Đăng nhập</button>
+          <button id="tabSignup">Đăng ký</button>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Mật khẩu<input type="password" name="password" required /></label>
+          <button type="submit" class="submit-btn">Đăng nhập</button>
+        </form>
+
+        <form id="signupForm" class="auth-form" style="display:none;">
+          <label>Tên đầy đủ<input type="text" name="fullname" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Mật khẩu<input type="password" name="password" required minlength="6" /></label>
+          <label>Nhập lại mật khẩu<input type="password" name="password2" required minlength="6" /></label>
+          <button type="submit" class="submit-btn">Tạo tài khoản</button>
+        </form>
+      </div>
+    </header>
+
+    <section class="banner">
+      <h1>Chào mừng đến với Website Ôn Thi Đại Học Online</h1>
+      <p>Rèn luyện mỗi ngày – Nâng cao điểm số – Sẵn sàng cho kỳ thi!</p>
+      <button>Bắt đầu ngay</button>
+    </section>
+    <section class="subjects">
+      <h2>Danh mục môn học</h2>
+      <div class="subject-list subject-grid">
+        <a href="toan.html" class="subject-card">Toán học</a>
+        <a href="vatly.html" class="subject-card">Vật lý</a>
+        <a href="hoahoc.html" class="subject-card">Hóa học</a>
+        <a href="tienganh.html" class="subject-card">Tiếng Anh</a>
+      </div>
+    </section>
+    <section class="exam">
+      <h2>Bài kiểm tra mẫu</h2>
+      <p><strong>Câu 1:</strong> Tính đạo hàm của hàm số f(x) = 3x² + 2x + 1</p>
+      <label><input type="radio" name="q1" /> f'(x) = 6x + 1</label>
+      <label><input type="radio" name="q1" /> f'(x) = 6x + 2</label>
+      <label><input type="radio" name="q1" /> f'(x) = 3x + 2</label><br /><br />
+
+      <p><strong>Câu 2:</strong> Tính tích phân ∫(2x + 3)dx</p>
+      <label><input type="radio" name="q2" /> x² + 3x + C</label>
+      <label><input type="radio" name="q2" /> 2x² + 3x + C</label>
+      <label><input type="radio" name="q2" /> x² + 3 + C</label><br /><br />
+
+      <p>
+        <strong>Câu 3:</strong> Giới hạn lim(x→2) (x² - 4)/(x - 2) bằng bao
+        nhiêu?
+      </p>
+      <label><input type="radio" name="q3" /> 2</label>
+      <label><input type="radio" name="q3" /> 4</label>
+      <label><input type="radio" name="q3" /> 0</label><br /><br />
+
+      <button class="submit-btn">Nộp bài</button>
+    </section>
+    <footer>
+      <p>© 2025 Website Ôn Thi Đại Học | Email: onthidaihoc@gmail.com</p>
+      <p>Hiệu Trưởng : Phan Mạnh Cường</p>
+    </footer>
+  </body>
+</html>
